@@ -6,7 +6,7 @@ var ReactDemo = React.createClass({
     render: function(){
         return(
             <div>
-            <CommentBox />
+            <CommentBox Classname="lion" content="commentBox" />
             <EventGenerator />
             <div>This is a simple Reactjs component</div>
             </div>
@@ -17,7 +17,7 @@ var ReactDemo = React.createClass({
 var CommentBox = React.createClass({
     render: function(){
         return(
-            <div>This will be a comment box</div>
+            <div>{this.props.content}</div>
         );
     }
 });
